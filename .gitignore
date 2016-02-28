@@ -2,6 +2,9 @@
 Thumbs.db
 ehthumbs.db
 
+# VS Code config
+.vscode
+
 # Folder config file
 Desktop.ini
 
