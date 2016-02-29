@@ -3,21 +3,12 @@ function Item(name, number) {
   this.number = number;
 }
 
-var foo = new Item("foo", 42);
-var bar = new Item("bar", 53);
-var baz = new Item("baz", 22);
-
 function Inventory() {
   this.items = [];
   this.add = function(item) {
     this.items.push(item);
   };
 }
-
-var myInv = new Inventory();
-myInv.add(foo);
-myInv.add(bar);
-myInv.add(baz);
 
 var utils = {
   print: function (items) {
@@ -41,6 +32,15 @@ var utils = {
     return total;
   }
 };
+
+var foo = new Item("foo", 42);
+var bar = new Item("bar", 53);
+var baz = new Item("baz", 22);
+
+var myInv = new Inventory();
+myInv.add(foo);
+myInv.add(bar);
+myInv.add(baz);
 
 utils.sort(myInv.items, "name");
 utils.total(myInv.items);
