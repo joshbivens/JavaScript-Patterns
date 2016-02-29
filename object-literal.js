@@ -1,6 +1,3 @@
-//----------------
-//  Item
-//----------------
 var item = {
   createItem: function(name, number) {
     return {
@@ -10,13 +7,9 @@ var item = {
   }
 }
 
-// Create new items
 var foo = item.createItem("bar", 43);
 var baz = item.createItem("qux", 77);
 
-//----------------
-//  Inventory
-//----------------
 var inventory = {
   items: [],
   addItem: function(item) {
@@ -24,11 +17,7 @@ var inventory = {
   }
 };
 
-// Push an item to inventory.items
 inventory.addItem(baz);
-// Check
 console.log(inventory.items);
-// Push another
-inventory.addItem(baz);
-// Check again. It works!
+inventory.addItem(baz);!
 console.log(inventory.items);
