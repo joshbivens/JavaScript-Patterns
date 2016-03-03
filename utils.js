@@ -33,13 +33,13 @@ var utils = {
   }
 };
 
-var foo = new Item("foo", 42);
-var bar = new Item("bar", 53);
-var baz = new Item("baz", 22);
+var foo  = new Item("foo", 42);
+var quux = new Item("quux", 53);
+var baz  = new Item("baz", 22);
 
 var myInv = new Inventory();
 myInv.add(foo);
-myInv.add(bar);
+myInv.add(quux);
 myInv.add(baz);
 
 utils.sort(myInv.items, "name");
